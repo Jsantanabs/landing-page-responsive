@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Landing page for a project">
+    <link rel="stylesheet" href="./styles.css">
+    <link rel="stylesheet" href="./header.css">
+    <link rel="stylesheet" href="./home.css">
+    <link rel="stylesheet" href="./menu.css">
+    <link rel="stylesheet" href="./testimonials.css">
+    <link rel="stylesheet" href="./footer.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
+        integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+        <script src="https://unpkg.com/scrollreveal"></script>
+    <title>Landing Page</title>
+</head>
+
+<body>
+    <header>
+        <nav id="navbar">
+            <i class="fa-solid fa-burger" id="nav_logo"> Food</i>
+
+            <ul id="nav_list">
+                <li class="nav-item active">
+                    <a href="#home">Início</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#menu">Cardápio</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#testimonials">Avaliações</a>
+                </li>
+            </ul>
+
+            <button class="btn-default">
+                Peça Aqui
+            </button>
+
+            <button id="mobile_btn">
+                <i class="fa-solid fa-bars"></i>
+            </button>
+
+        </nav>
+
+        <div id="mobile_menu">
+
+            <ul id="mobile_nav_list">
+                <li class="nav-item">
+                    <a href="#home">Início</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#menu">Cardápio</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#testimonials">Avaliações</a>
+                </li>
+            </ul>
+
+            <button class="btn-default">
+                Peça Aqui
+            </button>
+
+        </div>
+    </header>
+
+    <main id="content">
+        <section id="home">
+            <div class="shape"></div>
+            <div id="cta">
+                <h1 class="title">
+                    O Sabor vai até
+                    <span>você</span>
+                </h1>
+                <p class="desciption">
+                    Refeições completas em apenas 3 cliques!
+                </p>
+
+                <div id="cta_buttons">
+                    <a href="#dishes" class="btn-default">
+                        Ver Cardápio
+                    </a>
+
+                    <a href="tel:+5588988627006" id="phone_button">
+                        <button class="btn-default">
+                            <i class="fa-solid fa-phone"></i>
+                        </button>(88) 98862-7006
+                    </a>
+                </div>
+
+                <div class="social-media-buttons">
+                    <a href="https://wa.me/5588988627006">
+                        <i class="fa-brands fa-whatsapp">
+                        </i>
+
+                        <a href="https://www.instagram.com/theilonsantana_/">
+                            <i class="fa-brands fa-instagram">
+                            </i>
+                        </a>
+
+                        <a href="https://www.linkedin.com/in/josesantanas">
+                            <i class="fa-brands fa-linkedin">
+                            </i>
+                        </a>
+                </div>
+            </div>
+
+            <div id="banner">
+                <img src="./dishes-menu.png" alt="">
+            </div>
+        </section>
+
+        <section id="menu">
+            <h2 class="section-title">Cardápio</h2>
+            <h3 class="section-subtitle">Nossos pratos especiais</h3>
+
+            <div id="dishes">
+
+                <div class="dish">
+                    <div class="dish-heart">
+                        <i class="fa-solid fa-heart"></i>
+                    </div>
+                    <img src="./dish01.png" class="dish-image" alt="">
+                    <h3 class="dish-title">
+                        Lombo Suíno ao Molho de Vinho do Porto com Batatas Sauté
+                    </h3>
+                    <span class="dish-description">
+                        Corte nobre de lombo suíno, grelhado lentamente até atingir suculência e maciez.
+                    </span>
+                    <div class="dish-rate">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <span>(148+)</span>
+                    </div>
+                    <div class="dish-price">
+                        <h4>R$ 49,00</h4>
+                        <button class="btn-default">
+                            <i class="fa-solid fa-cart-shopping"></i>
+                    </div>
+                </div>
+
+
+
+
+                <div class="dish">
+                    <div class="dish-heart">
+                        <i class="fa-solid fa-heart"></i>
+                    </div>
+                    <img src="./dish02.png" class="dish-image" alt="">
+                    <h3 class="dish-title">
+                        Lombo de Bacalhau Confitado com Brócolis ao Alho Negro
+                    </h3>
+                    <span class="dish-description">
+                        Lombo de bacalhau Gadus morhua confitado lentamente no azeite extra virgem, preservando sua
+                        textura macia e lascas delicadas.
+                    </span>
+                    <div class="dish-rate">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <span>(148+)</span>
+                    </div>
+                    <div class="dish-price">
+                        <h4>R$ 69,00</h4>
+                        <button class="btn-default">
+                            <i class="fa-solid fa-cart-shopping"></i>
+                    </div>
+                </div>
+
+
+
+                <div class="dish">
+                    <div class="dish-heart">
+                        <i class="fa-solid fa-heart"></i>
+                    </div>
+                    <img src="./dish03.png" class="dish-image" alt="">
+                    <h3 class="dish-title">
+                        Tulipas de Frango Apimentadas com Glaceado de Pimenta Agridoce
+                    </h3>
+                    <span class="dish-description">
+                        Tulipas de frango marinadas em especiarias defumadas e pimentas artesanais, assadas lentamente
+                        até ficarem douradas e suculentas.
+                    </span>
+                    <div class="dish-rate">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <span>(148+)</span>
+                    </div>
+                    <div class="dish-price">
+                        <h4>R$ 29,99</h4>
+                        <button class="btn-default">
+                            <i class="fa-solid fa-cart-shopping"></i>
+                    </div>
+                </div>
+
+                <div class="dish">
+                    <div class="dish-heart">
+                        <i class="fa-solid fa-heart"></i>
+                    </div>
+                    <img src="./dish04.png" class="dish-image" alt="">
+                    <h3 class="dish-title">
+                        Arroz à Piamontese com Medalhão de Filé Mignon
+                    </h3>
+                    <span class="dish-description">
+                        Um prato clássico e sofisticado que une a cremosidade do arroz à piamontese ao sabor marcante do
+                        medalhão de filé mignon.
+                    </span>
+                    <div class="dish-rate">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <span>(148+)</span>
+                    </div>
+                    <div class="dish-price">
+                        <h4>R$ 59,99</h4>
+                        <button class="btn-default">
+                            <i class="fa-solid fa-cart-shopping"></i>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="testimonials">
+            <img src="./chef-testimonials.png" id="testimonials_chef" alt="">
+            <div id="testimonials-content">
+                <h2 class="section-title">Depoimentos</h2>
+                <h3 class="section-subtitle">O que nossos clientes dizem</h3>
+
+                <div id="feedbacks">
+                    <div class="feedback">
+                        <img src="./testimonials01.png" class="feedback-avatar" alt="">
+
+                        <div class="feedback-content">
+                            <p>
+                                Marcio
+                                <span>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                </span>
+                            </p>
+                            <p>
+                                "A comida é simplesmente deliciosa! O sabor é incrível e a apresentação é impecável.
+                                Recomendo
+                                a todos!"
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div id="feedbacks">
+                    <div class="feedback">
+                        <img src="./testimonials02.png" class="feedback-avatar" alt="">
+
+                        <div class="feedback-content">
+                            <p>
+                                Paula
+                                <span>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                </span>
+                            </p>
+                            <p>
+                                "O atendimento foi excepcional! A equipe é super atenciosa e fez com que me sentisse
+                                especial.
+                                Com certeza voltarei!"
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div id="feedbacks">
+                    <div class="feedback">
+                        <img src="./testimonials03.png" class="feedback-avatar" alt="">
+
+                        <div class="feedback-content">
+                            <p>
+                                José
+                                <span>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                </span>
+                            </p>
+                            <p>
+                                é um local que recomendo para quem busca uma refeição agradável em um ambiente
+                                confortável e com bom atendimento. É uma ótima opção para por exemplo, um jantar casual
+                                ou uma celebração especial.
+
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <a href="https://www.google.com/search?gs_ssp=eJzj4tZP1zcsSTdNMbc0NWC0UjWosDRJTk0zTTNIMTROM0lKtrQyqEhOSjOxMLY0NUtLNDQxNjD2EsrNT84vyVcoSi0uSSwtSswrSQUA5RgV8A&q=mocoto+restaurante&rlz=1C1VDKB_pt-PTBR1081BR1082&oq=mocoto+&gs_lcrp=EgZjaHJvbWUqEAgBEC4YrwEYxwEYsQMYgAQyBggAEEUYOTIQCAEQLhivARjHARixAxiABDIHCAIQABiABDIHCAMQABiABDIHCAQQABiABDIHCAUQABiABDIHCAYQLhiABDIHCAcQABiABDIHCAgQABiABNIBCDM4NjNqMGo3qAIAsAIA&sourceid=chrome&ie=UTF-8#lrd=0x94cef5f0d13f4bc9:0xcbf483956fa14303,1,,,,">
+                    <button class="btn-default">
+                        Ver Mais Avaliações
+                    </button>
+                </a>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <img src="./src/wave.svg" alt="">
+
+        <div id="footer_items">
+            <span id="copyright">
+                &copy; 2025 José Santana - Todos os direitos reservados
+            </span>
+
+            <div class="social-media-buttons">
+                <a href="https://wa.me/5588988627006">
+                    <i class="fa-brands fa-whatsapp">
+                    </i>
+
+                    <a href="https://www.instagram.com/theilonsantana_/">
+                        <i class="fa-brands fa-instagram">
+                        </i>
+                    </a>
+
+                    <a href="https://www.linkedin.com/in/josesantanas/">
+                        <i class="fa-brands fa-linkedin">
+                        </i>
+                    </a>
+            </div>
+        </div>
+
+    </footer>
+
+    <script src="./script.js"></script>
+</body>
+
+</html>
